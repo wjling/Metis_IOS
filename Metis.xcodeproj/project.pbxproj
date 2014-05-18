@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0456571519290701003A8F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571419290701003A8F96 /* Foundation.framework */; };
+		0456571719290701003A8F96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571619290701003A8F96 /* CoreGraphics.framework */; };
+		0456571919290701003A8F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571819290701003A8F96 /* UIKit.framework */; };
+		0456571F19290701003A8F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456571D19290701003A8F96 /* InfoPlist.strings */; };
+		0456572119290701003A8F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456572019290701003A8F96 /* main.m */; };
+		0456572519290701003A8F96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456572419290701003A8F96 /* AppDelegate.m */; };
+		0456572819290701003A8F96 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0456572619290701003A8F96 /* Main_iPhone.storyboard */; };
+		0456572B19290701003A8F96 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0456572919290701003A8F96 /* Main_iPad.storyboard */; };
+		0456572E19290701003A8F96 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456572D19290701003A8F96 /* MainViewController.m */; };
+		0456573119290701003A8F96 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456573019290701003A8F96 /* FlipsideViewController.m */; };
+		0456573319290701003A8F96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0456573219290701003A8F96 /* Images.xcassets */; };
+		0456573A19290701003A8F96 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456573919290701003A8F96 /* XCTest.framework */; };
+		0456573B19290701003A8F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571419290701003A8F96 /* Foundation.framework */; };
+		0456573C19290701003A8F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571819290701003A8F96 /* UIKit.framework */; };
+		0456574419290701003A8F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456574219290701003A8F96 /* InfoPlist.strings */; };
+		0456574619290701003A8F96 /* MetisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456574519290701003A8F96 /* MetisTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0456573D19290701003A8F96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0456570919290701003A8F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0456571019290701003A8F96;
+			remoteInfo = Metis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0456571119290701003A8F96 /* Metis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456571419290701003A8F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0456571619290701003A8F96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0456571819290701003A8F96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0456571C19290701003A8F96 /* Metis-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Metis-Info.plist"; sourceTree = "<group>"; };
+		0456571E19290701003A8F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0456572019290701003A8F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0456572219290701003A8F96 /* Metis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metis-Prefix.pch"; sourceTree = "<group>"; };
+		0456572319290701003A8F96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0456572419290701003A8F96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0456572719290701003A8F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0456572A19290701003A8F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0456572C19290701003A8F96 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0456572D19290701003A8F96 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		0456572F19290701003A8F96 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		0456573019290701003A8F96 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		0456573219290701003A8F96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0456573819290701003A8F96 /* MetisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456573919290701003A8F96 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0456574119290701003A8F96 /* MetisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetisTests-Info.plist"; sourceTree = "<group>"; };
+		0456574319290701003A8F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0456574519290701003A8F96 /* MetisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetisTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0456570E19290701003A8F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456571719290701003A8F96 /* CoreGraphics.framework in Frameworks */,
+				0456571919290701003A8F96 /* UIKit.framework in Frameworks */,
+				0456571519290701003A8F96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456573519290701003A8F96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456573A19290701003A8F96 /* XCTest.framework in Frameworks */,
+				0456573C19290701003A8F96 /* UIKit.framework in Frameworks */,
+				0456573B19290701003A8F96 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0456570819290701003A8F96 = {
+			isa = PBXGroup;
+			children = (
+				0456571A19290701003A8F96 /* Metis */,
+				0456573F19290701003A8F96 /* MetisTests */,
+				0456571319290701003A8F96 /* Frameworks */,
+				0456571219290701003A8F96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0456571219290701003A8F96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0456571119290701003A8F96 /* Metis.app */,
+				0456573819290701003A8F96 /* MetisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0456571319290701003A8F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0456571419290701003A8F96 /* Foundation.framework */,
+				0456571619290701003A8F96 /* CoreGraphics.framework */,
+				0456571819290701003A8F96 /* UIKit.framework */,
+				0456573919290701003A8F96 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0456571A19290701003A8F96 /* Metis */ = {
+			isa = PBXGroup;
+			children = (
+				0456572319290701003A8F96 /* AppDelegate.h */,
+				0456572419290701003A8F96 /* AppDelegate.m */,
+				0456572619290701003A8F96 /* Main_iPhone.storyboard */,
+				0456572919290701003A8F96 /* Main_iPad.storyboard */,
+				0456572C19290701003A8F96 /* MainViewController.h */,
+				0456572D19290701003A8F96 /* MainViewController.m */,
+				0456572F19290701003A8F96 /* FlipsideViewController.h */,
+				0456573019290701003A8F96 /* FlipsideViewController.m */,
+				0456573219290701003A8F96 /* Images.xcassets */,
+				0456571B19290701003A8F96 /* Supporting Files */,
+			);
+			path = Metis;
+			sourceTree = "<group>";
+		};
+		0456571B19290701003A8F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0456571C19290701003A8F96 /* Metis-Info.plist */,
+				0456571D19290701003A8F96 /* InfoPlist.strings */,
+				0456572019290701003A8F96 /* main.m */,
+				0456572219290701003A8F96 /* Metis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0456573F19290701003A8F96 /* MetisTests */ = {
+			isa = PBXGroup;
+			children = (
+				0456574519290701003A8F96 /* MetisTests.m */,
+				0456574019290701003A8F96 /* Supporting Files */,
+			);
+			path = MetisTests;
+			sourceTree = "<group>";
+		};
+		0456574019290701003A8F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0456574119290701003A8F96 /* MetisTests-Info.plist */,
+				0456574219290701003A8F96 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0456571019290701003A8F96 /* Metis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0456574919290701003A8F96 /* Build configuration list for PBXNativeTarget "Metis" */;
+			buildPhases = (
+				0456570D19290701003A8F96 /* Sources */,
+				0456570E19290701003A8F96 /* Frameworks */,
+				0456570F19290701003A8F96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metis;
+			productName = Metis;
+			productReference = 0456571119290701003A8F96 /* Metis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0456573719290701003A8F96 /* MetisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0456574C19290701003A8F96 /* Build configuration list for PBXNativeTarget "MetisTests" */;
+			buildPhases = (
+				0456573419290701003A8F96 /* Sources */,
+				0456573519290701003A8F96 /* Frameworks */,
+				0456573619290701003A8F96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0456573E19290701003A8F96 /* PBXTargetDependency */,
+			);
+			name = MetisTests;
+			productName = MetisTests;
+			productReference = 0456573819290701003A8F96 /* MetisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0456570919290701003A8F96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					0456573719290701003A8F96 = {
+						TestTargetID = 0456571019290701003A8F96;
+					};
+				};
+			};
+			buildConfigurationList = 0456570C19290701003A8F96 /* Build configuration list for PBXProject "Metis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0456570819290701003A8F96;
+			productRefGroup = 0456571219290701003A8F96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0456571019290701003A8F96 /* Metis */,
+				0456573719290701003A8F96 /* MetisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0456570F19290701003A8F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456572B19290701003A8F96 /* Main_iPad.storyboard in Resources */,
+				0456573319290701003A8F96 /* Images.xcassets in Resources */,
+				0456572819290701003A8F96 /* Main_iPhone.storyboard in Resources */,
+				0456571F19290701003A8F96 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456573619290701003A8F96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456574419290701003A8F96 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0456570D19290701003A8F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456572519290701003A8F96 /* AppDelegate.m in Sources */,
+				0456572E19290701003A8F96 /* MainViewController.m in Sources */,
+				0456573119290701003A8F96 /* FlipsideViewController.m in Sources */,
+				0456572119290701003A8F96 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456573419290701003A8F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456574619290701003A8F96 /* MetisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0456573E19290701003A8F96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0456571019290701003A8F96 /* Metis */;
+			targetProxy = 0456573D19290701003A8F96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0456571D19290701003A8F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456571E19290701003A8F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0456572619290701003A8F96 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456572719290701003A8F96 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0456572919290701003A8F96 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456572A19290701003A8F96 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0456574219290701003A8F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456574319290701003A8F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0456574719290701003A8F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0456574819290701003A8F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0456574A19290701003A8F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metis/Metis-Prefix.pch";
+				INFOPLIST_FILE = "Metis/Metis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0456574B19290701003A8F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metis/Metis-Prefix.pch";
+				INFOPLIST_FILE = "Metis/Metis-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0456574D19290701003A8F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Metis.app/Metis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metis/Metis-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MetisTests/MetisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0456574E19290701003A8F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Metis.app/Metis";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Metis/Metis-Prefix.pch";
+				INFOPLIST_FILE = "MetisTests/MetisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0456570C19290701003A8F96 /* Build configuration list for PBXProject "Metis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0456574719290701003A8F96 /* Debug */,
+				0456574819290701003A8F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0456574919290701003A8F96 /* Build configuration list for PBXNativeTarget "Metis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0456574A19290701003A8F96 /* Debug */,
+				0456574B19290701003A8F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0456574C19290701003A8F96 /* Build configuration list for PBXNativeTarget "MetisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0456574D19290701003A8F96 /* Debug */,
+				0456574E19290701003A8F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0456570919290701003A8F96 /* Project object */;
+}
