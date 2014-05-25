@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041189D7192C7C330065230C /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041189D2192C7C330065230C /* DrawerViewController.m */; };
+		041189D8192C7C330065230C /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 041189D4192C7C330065230C /* UIDevice+Extension.m */; };
+		041189D9192C7C330065230C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041189D6192C7C330065230C /* ViewController.m */; };
+		041880321929EF8000F968CF /* HttpSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 041880311929EF8000F968CF /* HttpSender.m */; };
 		0456571519290701003A8F96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571419290701003A8F96 /* Foundation.framework */; };
 		0456571719290701003A8F96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571619290701003A8F96 /* CoreGraphics.framework */; };
 		0456571919290701003A8F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571819290701003A8F96 /* UIKit.framework */; };
@@ -23,6 +27,7 @@
 		0456573C19290701003A8F96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456571819290701003A8F96 /* UIKit.framework */; };
 		0456574419290701003A8F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456574219290701003A8F96 /* InfoPlist.strings */; };
 		0456574619290701003A8F96 /* MetisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456574519290701003A8F96 /* MetisTests.m */; };
+		0456575319291D9B003A8F96 /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456575219291D9B003A8F96 /* LogIn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041189CF192BA5B50065230C /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		041189D1192C7C330065230C /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		041189D2192C7C330065230C /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		041189D3192C7C330065230C /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
+		041189D4192C7C330065230C /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		041189D5192C7C330065230C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		041189D6192C7C330065230C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		041880301929EF8000F968CF /* HttpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpSender.h; sourceTree = "<group>"; };
+		041880311929EF8000F968CF /* HttpSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpSender.m; sourceTree = "<group>"; };
 		0456571119290701003A8F96 /* Metis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456571419290701003A8F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0456571619290701003A8F96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +72,8 @@
 		0456574119290701003A8F96 /* MetisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MetisTests-Info.plist"; sourceTree = "<group>"; };
 		0456574319290701003A8F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0456574519290701003A8F96 /* MetisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetisTests.m; sourceTree = "<group>"; };
+		0456575119291D9B003A8F96 /* LogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
+		0456575219291D9B003A8F96 /* LogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogIn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041189D0192C7B2E0065230C /* SliderBar */ = {
+			isa = PBXGroup;
+			children = (
+				041189D1192C7C330065230C /* DrawerViewController.h */,
+				041189D2192C7C330065230C /* DrawerViewController.m */,
+				041189D3192C7C330065230C /* UIDevice+Extension.h */,
+				041189D4192C7C330065230C /* UIDevice+Extension.m */,
+				041189D5192C7C330065230C /* ViewController.h */,
+				041189D6192C7C330065230C /* ViewController.m */,
+			);
+			name = SliderBar;
+			sourceTree = "<group>";
+		};
+		0418802F1929EE4D00F968CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				041880301929EF8000F968CF /* HttpSender.h */,
+				041880311929EF8000F968CF /* HttpSender.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		0456570819290701003A8F96 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +155,11 @@
 		0456571A19290701003A8F96 /* Metis */ = {
 			isa = PBXGroup;
 			children = (
+				041189D0192C7B2E0065230C /* SliderBar */,
+				0418802F1929EE4D00F968CF /* Utils */,
 				0456572319290701003A8F96 /* AppDelegate.h */,
 				0456572419290701003A8F96 /* AppDelegate.m */,
+				0456574F1929104B003A8F96 /* LoginAndRegister */,
 				0456572619290701003A8F96 /* Main_iPhone.storyboard */,
 				0456572919290701003A8F96 /* Main_iPad.storyboard */,
 				0456572C19290701003A8F96 /* MainViewController.h */,
@@ -127,6 +168,7 @@
 				0456573019290701003A8F96 /* FlipsideViewController.m */,
 				0456573219290701003A8F96 /* Images.xcassets */,
 				0456571B19290701003A8F96 /* Supporting Files */,
+				041189CF192BA5B50065230C /* AppConstants.h */,
 			);
 			path = Metis;
 			sourceTree = "<group>";
@@ -158,6 +200,15 @@
 				0456574219290701003A8F96 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0456574F1929104B003A8F96 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				0456575119291D9B003A8F96 /* LogIn.h */,
+				0456575219291D9B003A8F96 /* LogIn.m */,
+			);
+			name = LoginAndRegister;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041189D9192C7C330065230C /* ViewController.m in Sources */,
 				0456572519290701003A8F96 /* AppDelegate.m in Sources */,
+				041880321929EF8000F968CF /* HttpSender.m in Sources */,
+				0456575319291D9B003A8F96 /* LogIn.m in Sources */,
 				0456572E19290701003A8F96 /* MainViewController.m in Sources */,
+				041189D7192C7C330065230C /* DrawerViewController.m in Sources */,
+				041189D8192C7C330065230C /* UIDevice+Extension.m in Sources */,
 				0456573119290701003A8F96 /* FlipsideViewController.m in Sources */,
 				0456572119290701003A8F96 /* main.m in Sources */,
 			);
@@ -476,6 +532,7 @@
 				0456574B19290701003A8F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0456574C19290701003A8F96 /* Build configuration list for PBXNativeTarget "MetisTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +541,7 @@
 				0456574E19290701003A8F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,10 @@
 //
 
 #import "MainViewController.h"
+#import "AppConstants.h"
+
+
+extern HttpSender* httpSender;
 
 @interface MainViewController ()
 
@@ -17,6 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    httpSender = [[HttpSender alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
