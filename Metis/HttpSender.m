@@ -16,6 +16,7 @@
 @synthesize myDelegates;
 @synthesize delegate_method;
 
+//
 -(id)init
 {
     serverURL = @"http://222.200.182.183:10087/";
