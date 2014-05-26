@@ -7,9 +7,7 @@
 //
 
 #import "LogIn.h"
-#import "HttpSender.h"
-#import "AppConstants.h"
-#import <CommonCrypto/CommonDigest.h>
+
 
 
 @interface LogIn ()<UITextFieldDelegate,HttpSenderDelegate>
@@ -26,6 +24,9 @@
 
 @implementation LogIn
 
+@synthesize textField_password;
+@synthesize textField_userName;
+@synthesize button_logIn;
 @synthesize logInEmail;
 @synthesize logInPassword;
 
@@ -130,15 +131,11 @@
 -(void)jumpToRegisterView
 {
     
-}
-
--(BOOL)isEmailValid:(NSString *)email
-{
-    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-    return [emailTest evaluateWithObject:email];
+    Register* registerView = [[Register alloc]init];
+    [self presentViewController:registerView animated:YES completion:nil];
 
 }
+
 
 -(BOOL)isTextFieldEmpty
 {
@@ -184,7 +181,7 @@
         {
             if ([textField text] != nil && [[textField text] length]!= 0) {
                 
-                if (![self isEmailValid: textField.text]) {
+                if (![CommonUtils isEmailValid: textField.text]) {
                     
                     UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"The format of email is invalid" delegate:self cancelButtonTitle:@"OK,I know" otherButtonTitles:nil, nil];
                     [alert show];
@@ -207,6 +204,8 @@
             default:
             break;
     }
+    
+    [textField resignFirstResponder];
 
 }
 
@@ -249,6 +248,11 @@
 
 }
 
+
+- (IBAction)registerBtnClicked:(id)sender {
+    [self jumpToRegisterView];
+}
+
 #pragma mark - HttpSenderDelegate
 
 -(void)finishWithReceivedData:(NSData *)rData
@@ -265,13 +269,8 @@
             NSLog(@"password+salt: %@",str);
             
             //MD5 encrypt
-            const char *cstr = [str UTF8String];
-            unsigned char result[CC_MD5_DIGEST_LENGTH];
-            CC_MD5(cstr, strlen(cstr), result);
             NSMutableString *md5_str = [NSMutableString string];
-            for (int i = 0; i < 16; i++)
-                [md5_str appendFormat:@"%02x", result[i]];
-            NSLog(@"MD5: %@",md5_str);
+            md5_str = [CommonUtils MD5EncryptionWithString:str];
             
             NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
             [params setValue:self.logInEmail forKey:@"email"];

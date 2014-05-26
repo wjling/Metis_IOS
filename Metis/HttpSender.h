@@ -22,15 +22,15 @@
 @property(nonatomic,strong)NSURLConnection* myConnection;
 @property(nonatomic,strong)id <HttpSenderDelegate> mDelegate;
 @property(nonatomic,strong)NSMutableData* responseData;
-@property(nonatomic,strong)NSMutableSet* myDelegates;
-@property(nonatomic,strong)NSMutableDictionary* delegate_method;
+//@property(nonatomic,strong)NSMutableSet* myDelegates;
+//@property(nonatomic,strong)NSMutableDictionary* delegate_method;
 
--(id)init;
+//-(id)init;
 
 -(id)initWithDelegate:(id)delegate;
 
--(void)addDelegate:(id)myDelegate whithDelegateName:(NSString*)myDelegateName withCallbackMethodName:(NSString*)methodName;
--(void)removeDelegate:(id)myDelegate withDelegateName:(NSString*)myDelegateName;
+//-(void)addDelegate:(id)myDelegate whithDelegateName:(NSString*)myDelegateName withCallbackMethodName:(NSString*)methodName;
+//-(void)removeDelegate:(id)myDelegate withDelegateName:(NSString*)myDelegateName;
 
 -(NSString*)parseOperationCode:(int) operationCode;
 

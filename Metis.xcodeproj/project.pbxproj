@@ -28,6 +28,8 @@
 		0456574419290701003A8F96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456574219290701003A8F96 /* InfoPlist.strings */; };
 		0456574619290701003A8F96 /* MetisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456574519290701003A8F96 /* MetisTests.m */; };
 		0456575319291D9B003A8F96 /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456575219291D9B003A8F96 /* LogIn.m */; };
+		04C790FC19338B32002C7561 /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C790FB19338B32002C7561 /* Register.m */; };
+		04C790FF19338B46002C7561 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C790FE19338B46002C7561 /* CommonUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,10 @@
 		0456574519290701003A8F96 /* MetisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetisTests.m; sourceTree = "<group>"; };
 		0456575119291D9B003A8F96 /* LogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
 		0456575219291D9B003A8F96 /* LogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogIn.m; sourceTree = "<group>"; };
+		04C790FA19338B32002C7561 /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		04C790FB19338B32002C7561 /* Register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Register.m; sourceTree = "<group>"; };
+		04C790FD19338B46002C7561 /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		04C790FE19338B46002C7561 /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 		0418802F1929EE4D00F968CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				04C790FD19338B46002C7561 /* CommonUtils.h */,
+				04C790FE19338B46002C7561 /* CommonUtils.m */,
 				041880301929EF8000F968CF /* HttpSender.h */,
 				041880311929EF8000F968CF /* HttpSender.m */,
 			);
@@ -205,6 +213,8 @@
 		0456574F1929104B003A8F96 /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				04C790FA19338B32002C7561 /* Register.h */,
+				04C790FB19338B32002C7561 /* Register.m */,
 				0456575119291D9B003A8F96 /* LogIn.h */,
 				0456575219291D9B003A8F96 /* LogIn.m */,
 			);
@@ -317,6 +327,8 @@
 				041189D7192C7C330065230C /* DrawerViewController.m in Sources */,
 				041189D8192C7C330065230C /* UIDevice+Extension.m in Sources */,
 				0456573119290701003A8F96 /* FlipsideViewController.m in Sources */,
+				04C790FC19338B32002C7561 /* Register.m in Sources */,
+				04C790FF19338B46002C7561 /* CommonUtils.m in Sources */,
 				0456572119290701003A8F96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,19 +13,19 @@
 @synthesize myConnection;
 @synthesize mDelegate;
 @synthesize responseData;
-@synthesize myDelegates;
-@synthesize delegate_method;
+//@synthesize myDelegates;
+//@synthesize delegate_method;
 
 //
--(id)init
-{
-    serverURL = @"http://222.200.182.183:10087/";
-    httpURL = @"";
-    responseData = [[NSMutableData alloc]init];
-    myDelegates = [[NSMutableSet alloc]init];
-    delegate_method = [[NSMutableDictionary alloc]init];
-    return self;
-}
+//-(id)init
+//{
+//    serverURL = @"http://222.200.182.183:10087/";
+//    httpURL = @"";
+//    responseData = [[NSMutableData alloc]init];
+//    myDelegates = [[NSMutableSet alloc]init];
+//    delegate_method = [[NSMutableDictionary alloc]init];
+//    return self;
+//}
 
 -(id)initWithDelegate:(id)delegate
 {
@@ -36,28 +36,28 @@
     return self;
 }
 
--(void)addDelegate:(id)myDelegate whithDelegateName:(NSString*)myDelegateName withCallbackMethodName:(NSString*)methodName
-{
-    [myDelegates addObject:myDelegate];
-    [delegate_method setValue:methodName forKey:myDelegateName];
-}
-
--(void)removeDelegate:(id)myDelegate withDelegateName:(NSString*)myDelegateName
-{
-    [myDelegates removeObject:myDelegate];
-    [delegate_method removeObjectForKey:myDelegateName];
-}
+//-(void)addDelegate:(id)myDelegate whithDelegateName:(NSString*)myDelegateName withCallbackMethodName:(NSString*)methodName
+//{
+//    [myDelegates addObject:myDelegate];
+//    [delegate_method setValue:methodName forKey:myDelegateName];
+//}
+//
+//-(void)removeDelegate:(id)myDelegate withDelegateName:(NSString*)myDelegateName
+//{
+//    [myDelegates removeObject:myDelegate];
+//    [delegate_method removeObjectForKey:myDelegateName];
+//}
 
 -(void)connection:(NSURLConnection*)connection didReceiveData:(NSData *)data
 {
-    NSLog(@"didReceiveData");
+//    NSLog(@"didReceiveData");
     [responseData appendData:data];
 }
 
 
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection
 {
-    NSLog(@"connectionDidFinishLoading");
+//    NSLog(@"connectionDidFinishLoading");
 
     [self.mDelegate finishWithReceivedData:responseData];
 }
@@ -67,6 +67,9 @@
 {
     NSString* resultCode = [NSString alloc];
     switch (operationCode) {
+        case 0:
+            resultCode = @"register";
+            break;
         case 1:
             resultCode = @"login";
             break;
